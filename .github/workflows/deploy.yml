@@ -25,7 +25,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
 
-      # /home/runner/work/spring-blog-v2-step12/spring-blog-v2-step12/deploy
+      # /home/runner/work/spring-blog-v2-step12/spring-blo g-v2-step12/deploy
 #      - name: Deploy packaging
 #        run: |
 #          mkdir deploy
