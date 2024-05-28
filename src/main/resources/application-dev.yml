@@ -8,6 +8,11 @@ server:
       tracking-modes: cookie
   port: 8080
 
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: TRACE
+    shop.project.pathorderserver: DEBUG # DEBUG 이상의 에러 뜨도록 설정
+
 spring:
   mustache:
     servlet:

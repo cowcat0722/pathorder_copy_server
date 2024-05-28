@@ -59,7 +59,7 @@ class OrderRepositoryTest {
         //given
         int storeId = 1;
         LocalDate startDate = LocalDate.of(2024, 1, 21);
-        LocalDate endDate = LocalDate.of(2024, 5, 20);
+        LocalDate endDate = LocalDate.now();
 
         // when
         List<Order> orderList = orderRepository.findAllByStoreIdAndCreatedAtBetween(storeId, startDate.atStartOfDay(), endDate.atTime(23, 59, 59));
