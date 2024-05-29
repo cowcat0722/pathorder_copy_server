@@ -44,3 +44,4 @@ jobs:
         version_label: pathorder-${{ github.run_number }}
         region: ap-northeast-2
         deployment_package: deploy/deploy.zip
+        use_existing_version_if_available: true
