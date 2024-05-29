@@ -1,4 +1,4 @@
-`name: pathorder
+name: pathorder
 on:
   push:
     branches:
