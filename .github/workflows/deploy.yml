@@ -33,5 +33,14 @@ jobs:
         cp Procfile deploy/Procfile
         cp -r .ebextensions deploy/.ebextensions
         cd deploy && zip -r deploy.zip .
-    - name: list
-      run: ls
+
+    - name: Deploy tp EB
+      uses: einaregilsson/beanstalk-deploy@v22
+      with:
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        application_name: pathorder
+        environment_name: pathorder-env
+        version_label: pathorder-${{steps.current-time.outputs.formattedTime}}
+        region: ap-northeast-2
+        deployment_package: deploy/deploy.zip
