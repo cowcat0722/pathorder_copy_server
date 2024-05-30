@@ -30,7 +30,7 @@ jobs:
       run: |
         mkdir deploy
         cp build/libs/*.jar deploy/application.jar
-        cp build/libs/upload deploy/upload
+        cp upload deploy/upload
         cp Procfile deploy/Procfile
         cp -r .ebextensions deploy/.ebextensions
         cd deploy && zip -r deploy.zip .
