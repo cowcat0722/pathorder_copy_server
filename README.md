@@ -1,4 +1,4 @@
-# pathorder_app
+# pathorder_server
 kdit4-green Final Project Team 3
 
 # Pathorder App Project
