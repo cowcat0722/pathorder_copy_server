@@ -20,7 +20,7 @@ spring:
     properties:
       hibernate:
         default_batch_fetch_size: 10
-        dialect: org.hibernate.dialect.MySQLDialect # JPA 방언 설정
+        dialect: org.hibernate.dialect.MySQL8Dialect # JPA 방언 설정
     open-in-view: false # true 는 세션이 서버에서 머물고 false 는 서비스에서 소멸한다.
 
 logging:
