@@ -29,7 +29,7 @@ public class StoreOwnerController {
         if (sessionStore != null) {
             return "redirect:/stores/" + sessionStore.getId() + "/orders";
         } else {
-            return "redirect:/stores/login-form";
+            return "/stores/login-form";
         }
     }
 

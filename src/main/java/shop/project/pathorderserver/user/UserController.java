@@ -19,6 +19,11 @@ public class UserController {
     private final UserService userService;
     private final StoreSseService storeSseService;
 
+    @GetMapping("health")
+    public String health() {
+        return "ok";
+    }
+
     @AppRequest
     @PostMapping("/join") // 회원가입
     public ResponseEntity<?> join(@RequestBody @Valid UserRequest.JoinDTO reqDTO, Errors errors) {
